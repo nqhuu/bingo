@@ -1,0 +1,42 @@
+.dial-container {
+    // position: relative;
+    // text-align: center;
+
+    .dial-bingo {
+        // background-image: radial-gradient();
+        background: linear-gradient(135deg, rgba(191, 221, 229) 10%, rgba(243, 232, 202) 100%);
+        width: 350px;
+        height: 350px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        // border: 1px solid red;
+        border-radius: 50%;
+        font-size: 250px;
+        font-weight: 700;
+        color: red;
+    }
+
+    .start-dial {
+        background: linear-gradient(135deg, rgba(191, 221, 229) 10%, rgba(243, 232, 202) 100%);
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 40px;
+        // border: 1px solid red;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 600;
+        color: chocolate;
+
+        &:hover {
+            opacity: 75%;
+        }
+    }
+}
