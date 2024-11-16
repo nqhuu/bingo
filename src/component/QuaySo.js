@@ -10,7 +10,7 @@ class QuaySo extends Component {
     state = {
         dial: '',
         arrayNumberData: '',
-        arrayDial: '',
+        arrayDial: ['free'],
         numbers: '',
         reset: false,
     }
@@ -36,7 +36,7 @@ class QuaySo extends Component {
     }
 
     handleDial = () => {
-        const { arrayNumberData, arrayDial, numbers, reset } = this.state;
+        const { arrayDial, numbers, reset } = this.state;
         const randomIndexNumber = Math.floor(Math.random() * numbers.length);
         const selectNumber = numbers[randomIndexNumber];
 
@@ -59,7 +59,7 @@ class QuaySo extends Component {
         if (reset) {
             this.setState({
                 dial: '',
-                arrayDial: [],
+                arrayDial: ['free'],
                 numbers: Array.from({ length: 75 }, (_, i) => i + 1),
                 reset: false,
             });

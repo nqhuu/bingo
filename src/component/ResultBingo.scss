@@ -1,0 +1,32 @@
+.result-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .result-bingo-container {
+
+        display: flex;
+        flex-wrap: wrap;
+        width: 335px;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        // margin-top: 5px;
+        // margin-left: 5px;
+
+        .result-bingo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 55px;
+            height: 55px;
+            // text-align: center;
+            font-size: 35px;
+            margin: 5px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            background-color: rgb(202, 255, 254);
+        }
+    }
+}

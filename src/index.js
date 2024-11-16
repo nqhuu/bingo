@@ -5,14 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './redux/store';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const renderApp = () => {
   ReactDOM.render(
     <Provider store={store}>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
+      {/* <React.StrictMode> */}
+      <App />
+      {/* </React.StrictMode> */}
     </Provider>,
     document.getElementById('root'));
 }

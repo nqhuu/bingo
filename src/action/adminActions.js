@@ -36,3 +36,21 @@ export const arrayDialSuccess = (data) => ({
     type: types.DIAL_BINGO_SUCCESS,
     data: data
 })
+
+
+export const getCheckBingo = (data) => {
+    return async (dispatch) => {
+        try {
+            if (data) {
+                await dispatch(CheckBingoSuccess(data));
+            }
+        } catch (e) {
+            console.error(e);
+        }
+    }
+}
+
+export const CheckBingoSuccess = (data) => ({
+    type: types.CHECK_BINGO_SUCCESS,
+    data: data
+})
