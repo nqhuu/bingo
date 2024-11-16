@@ -39,11 +39,26 @@
 }
 
 .App {
-    margin: 0 200px;
+    margin: 0 100px;
+
 
     .header {
-        color: red;
-        font-size: 40px;
+        // border: 1px solid #000;
+        font-family: 'Times New Roman', Times, serif;
+
+        .header1 {
+            color: #525a95;
+            font-size: 40px;
+            font-weight: 550;
+        }
+
+        .header2 {
+            color: red;
+            font-size: 40px;
+            font-weight: 900;
+        }
+
+        ;
     }
 
     .table-container {
@@ -51,21 +66,24 @@
         gap: 20px;
 
         .dial {
+            background: linear-gradient(135deg, rgb(248, 223, 252) 10%, rgb(202, 228, 243) 100%);
             width: 30%;
-            height: 550px;
-            border: 1px solid red;
+            height: 595px;
+            // border: 1px solid red;
         }
 
         .table-detail {
+            background: linear-gradient(135deg, rgb(248, 223, 252) 10%, rgb(202, 228, 243) 100%);
             width: 70%;
-            height: 550px;
-            border: 1px solid red;
+            height: 595px;
+            // border: 1px solid red;
         }
     }
 
     .result-bingo {
-        margin-top: 30px;
-        height: 200px;
-        border: 1px solid green;
+        background: linear-gradient(135deg, rgb(248, 223, 252) 10%, rgb(202, 228, 243) 100%);
+        margin-top: 10px;
+        height: 300px;
+        // border: 1px solid green;
     }
 }

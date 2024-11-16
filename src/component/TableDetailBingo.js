@@ -118,8 +118,6 @@ class TableDetailBingo extends Component {
         bingoNew = [...bingoNew]
         let arrayDial = this.props.arrayDial;
         if (bingoNew.length === 5) {
-            console.log('bingo', bingo)
-            console.log('arrayDial', arrayDial)
             let isBingo = false;
             isBingo = bingo.every((item, index) => arrayDial.includes(item));
             if (isBingo) {
@@ -128,16 +126,10 @@ class TableDetailBingo extends Component {
                 const audio = new Audio(winNotification);
                 audio.play();
                 toast.success('BINGO !!!')
-                // this.setState({
-                //     bingo: Array(5).fill('')
-                // })
             } else {
                 toast.error('Chưa đạt BINGO!!')
                 const audio = new Audio(loseNotification);
                 audio.play();
-                // this.setState({
-                //     bingo: Array(5).fill('')
-                // })
             }
         } else {
             toast.error('Bạn cần nhập đủ 5 ô, giá trị trong ô không được trùng!!')

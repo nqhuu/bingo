@@ -20,38 +20,39 @@ const adminReducer = (state = initialState, action) => {
                 arrayDial: action.data
             }
         case types.CHECK_BINGO_SUCCESS:
-            let bingo = action.data
+            // let bingo = action.data.sort((a, b) => a - b);
+            let bingo = action.data;
+            // let bingoCopy = [...bingo].sort((a, b) => a - b);
+            // console.log(bingoCopy)
             if (state.result.length === 0) {
                 let copyState = [...state.result, bingo]
-                console.log('bingo copyState', copyState)
                 return {
                     ...state,
                     result: [...copyState]
                 }
             }
-            console.log('length', state.result.length)
 
-            if (state.result.length !== 0) {
-                let flag = false
-                console.log('length', state.result.length)
-                let copyState = [...state.result]
-                console.log('copyState', copyState)
+            if (state.result.length > 0) {
+                let flag;
+                let copyState = [...state.result];
                 flag = copyState.some((item, index) => {
-                    let arr1 = [...item].sort((a, b) => a - b);
-                    let arr2 = [...bingo].sort((a, b) => a - b);
-                    console.log('arr2', arr2)
-                    for (let i = 0; i < arr1.length; i++) {
-                        if (arr1[i] !== arr2[i]) {
-                            return true;
-                        }
-                    }
+                    let arr1 = [...item].sort();
+                    return arr1.every((value, index) => {
+                        let arr2 = [...bingo].sort();
+                        console.log('arr2', arr2)
+                        return value === arr2[index]
+                    });
                 })
-                if (flag) {
+                if (!flag) {
                     return {
                         ...state,
                         result: [...state.result, bingo]
                     }
-                }
+                } else {
+                    return {
+                        ...state
+                    }
+                };
             }
 
         default:

@@ -1,3 +1,9 @@
+h1 {
+    font-weight: 500;
+    opacity: 70%;
+
+}
+
 .result-container {
     display: flex;
     flex-wrap: wrap;
@@ -8,7 +14,7 @@
 
         display: flex;
         flex-wrap: wrap;
-        width: 335px;
+        width: 410px;
         border-radius: 10px;
         margin-right: 10px;
         margin-bottom: 10px;
@@ -19,14 +25,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 55px;
-            height: 55px;
-            // text-align: center;
+            width: 70px;
+            height: 70px;
             font-size: 35px;
             margin: 5px;
-            border: 1px solid #000;
             border-radius: 50%;
-            background-color: rgb(202, 255, 254);
+            color: rgb(246, 7, 7);
+            font-weight: 500;
         }
     }
 }

@@ -66,15 +66,24 @@ class QuaySo extends Component {
         }
     }
 
+    getRandomColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
     render() {
         const { dial, reset } = this.state;
         return (
             <>
                 <div className="dial-container">
-                    <h1>Quay Số</h1>
-                    <div className="dial-bingo">{dial}</div>
+                    <h1>DIAL</h1>
+                    <div className="dial-bingo" style={{ color: this.getRandomColor() }}>{dial}</div>
                     <div className="start-dial" onClick={() => this.handleDial()}>
-                        {!reset ? <span>Quay Số</span> : <span style={{ color: 'blue', fontWeight: '650' }}>Chơi Lại</span>}
+                        {!reset ? <span>START</span> : <span style={{ color: 'blue', fontWeight: '650' }}>Chơi Lại</span>}
                     </div>
                 </div>
             </>

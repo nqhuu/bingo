@@ -31,7 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className='header'>Chào mừng đến với HPGLass Bingo!</h1>
+        <h1 className='header'><span className='header1'>Chào mừng đến với </span><span className='header2'>HPGLass Bingo!</span></h1>
         <div className='table-container'>
           <div className='dial'>
             <QuaySo />

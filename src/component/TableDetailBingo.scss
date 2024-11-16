@@ -3,7 +3,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // line-height: 100px;
         margin-left: auto;
         margin-right: auto;
         color: rgba(79, 143, 208, 10);
@@ -14,7 +13,7 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         cursor: pointer;
         font-weight: 600;
-        border-radius: 40px;
+        border-radius: 10px;
         margin-top: 10px;
 
         &:hover {
@@ -39,14 +38,14 @@
             text-align: center;
             font-size: 45px;
             margin: 5px;
-            border: 1px solid #000;
-            border-radius: 50%;
+            // border: 1px solid #939393;
+            border-radius: 10px;
             background-color: rgb(214, 255, 202);
             // opacity: 70%;
 
             input {
-                width: 50px;
-                height: 50px;
+                width: 55px;
+                height: 55px;
                 border: none;
                 text-align: center;
                 font-size: 30px;
@@ -81,7 +80,7 @@
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         cursor: pointer;
         font-weight: 600;
-        border-radius: 40px;
+        border-radius: 5px;
         margin-top: 10px;
 
         &:hover {
@@ -93,7 +92,7 @@
     .table-container {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 30px;
+        margin-left: 20px;
         padding-top: 15px;
 
         .table-row {
@@ -103,10 +102,12 @@
             align-items: center;
             justify-content: center;
             // .table-column {
-            width: 45px;
-            height: 45px;
+            width: 55px;
+            height: 55px;
             border: 1px solid #908f8f;
             border-radius: 50%;
+            font-size: 30px;
+            color: #595757;
 
             // }
             &.active {
